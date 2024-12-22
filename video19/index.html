@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts</title>
+</head>
+<style>
+    h1{
+        /* this is used to center a line */
+        text-align: center;
+        /* font family refers to the type of font the website will have meaning that this will change the font of the website */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* font style is a tag that is given for styling the font of a certain line */
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* here you will see that after applying this style to the font, the font has become very thin and less visible */
+        font-style: italic;
+        /* this problem is solved by font-weight tag here */
+        font-weight: 1000;
+        /* it makes the size of the font more visible and makes the texts or words more darker */
+
+
+        /* here this tag is not used that much but it decorates the text meaning if we want to underline the text or overline it we can simply do it by this tag */
+        text-decoration:underline;
+
+        /* it is not necessary to set the size of the font because the size of the font is by default set but if you want to change it you can use this code */
+        font-size: 20px;
+
+        /* this specifies the amount of space that is going to be in between the two lines of a webpage */
+        line-height: 5;
+
+        /* this refers to the amount of space that is going to be in between the two letters of a webpage */
+        letter-spacing: 3;
+    }
+    /* here you will see that the letters of the h2 are not in capital letters but this code has converted them into capital  */
+    
+    h2{
+        /* it is used to convert the first letters of a word or a line into capital */
+        text-transform: capitalize;
+    }
+
+    h3{
+        /* this is used to convert the lines into lowercase */
+        text-transform: lowercase;
+    }
+
+    h4{
+        /* it is used to convert the lines to uppercase, it will convert all the letters of all the words into capital letters */
+        text-transform: uppercase;
+
+        /* this will underline the text, there are many other values like dotted, zig-zag lines etc*/
+        text-decoration: underline;
+
+        /* this will give the text colour */
+        text-decoration-color: aqua;
+
+        /* this will specify the thickness of the underlined line */
+        text-decoration-thickness:7px;
+
+        /* this add the indent to the line meaning the amount of space from the starting */
+        text-indent: 7px;
+    }
+
+    .lorem{
+        /* this will make the border visible for this paragraph */
+        border: 2px solid blue;
+
+        /* this will set the width for it which is 45 pixels */
+        width: 45px;
+
+        /* this will specify that what will happen if the text will overflow from the box and it has more properties like clip, inherit etc*/
+        text-overflow:clip;
+
+        /* this will hide that paragraph which is overflowing from the box */
+        overflow: hidden;
+    }
+
+    .suui{
+        
+        border: 2px solid blue;
+        width: 145px;
+        /* this will continue the word in the same line by breaking it when it overflows */
+        word-break: break-all;
+    }
+</style>
+<body>
+    <div>
+    <h1>FONT</h1>
+    <h2>about fonts</h2>
+    <h3>ABOUT FONTS</h3>
+    <h4>about fonts</h4>
+    <p>this is a font</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt voluptate minus, non ipsam doloribus a, repudiandae maiores, delectus dolorem esse ad.</p>
+    <p class="suui">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores debitis, perspiciatis omnis tenetur velit accusamus laudantium ex eaque. Doloremque iste atque exercitationem! Mollitia, corporis vitae tenetur quidem qui provident perferendis?</p>
+    </div>
+</body>
+</html>

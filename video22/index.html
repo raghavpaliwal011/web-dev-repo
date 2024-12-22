@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    .hello{
+        background-color: red;
+        color: white;
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* here this vw stands for viewport width through which we can define the width of the element  */
+        width: 80vw;
+        /* here this vh stands for viewport height through which we can define the height of the element it always takes the the value in percentage. Like here this vw is 80 and vh is 10 which is 10 percent of the vw */
+        height: 10vh;
+        /* here this margin auto means that this will give the element equal gaps from left as well as right hence, having it in the center*/
+        margin: auto;
+    }
+
+    .namaskar{
+        background-color: aquamarine;
+        color: white;
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height: 10vh; */
+        /* here this 23px is the gap between the two paragraphs */
+        margin: 23px auto;
+        min-height: 80vh;
+    }
+
+    .raghav{
+        background-color: aquamarine;
+        color: white;
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        height: 10vh;
+        font-size: 18px;
+        margin: 23px auto;
+    }
+
+
+    /* here this paragraph tag is in the raghav class so it will inherit all the properties of the raghav class */
+
+    /* here this paragraph tag will get 18px font family because it is set in its class but it is additionally given 2em of font size so this em's value will multiply from the class's font-size's value and hence, the font size of this paragraph tag is 36 px */
+    /* for example if the font size of class is 15px and the font size of the paragraph tag in this same class is 5 em then this method will be used 15 x 5 = 75. hence the font size of the paragraph tag will be 75px */
+
+    /* note that if you do not give the font size in the class then it will be 16px(for the class) by default */
+    .raghav p{
+        font-size: 2em;
+    }
+
+    /* vmin is the minimum unit for both the device that the user is using like in the pc it is the height and in phone it is the width */
+     /*vmax is the maximum unit for both the device that the user is using like in the it is the height and in the phone it is the width  */
+    .mycont{
+        box-sizing: border-box;
+        background-color: yellow;
+        color: red;
+        width: 100vmin;
+    }
+</style>
+</head>
+<body>
+    <div class="hello">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsa suscipit! Deleniti odit ea libero adipisloreci rem similique distinctio aperiam ipsa perspiciatis vel.
+    </div>
+    <div class="namaskar">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ratione error doloremque fugiat dolorum. Libero nisi adipisci nulla autem quam reiciendis, necessitatibus neque nemo temporibus tempora consequuntur. Inventore nam, natus accusantium error quis possimus quibusdam aut ea iste beatae excepturi, eligendi aliquam, at soluta. Culpa ipsam consectetur harum repudiandae aliquam eos omnis, ullam natus accusamus vero iusto! Reiciendis mollitia impedit ratione consectetur, eius placeat alias et omnis laudantium facere dolor. Doloremque, earum, eius dicta commodi illo quisquam est excepturi neque soluta provident id, officiis minus cumque aspernatur. Quidem totam harum reprehenderit voluptatibus ut neque quas adipisci suscipit iure ipsam quaerat alias dicta quod repellendus doloribus fugit quis laudantium, eaque non. Nulla voluptatem ducimus soluta ea vel maiores! Esse optio inventore culpa voluptate minus, obcaecati, reprehenderit fuga consectetur nobis non quos neque amet nemo quaerat voluptatem provident. Ut reprehenderit facere, nam dolores atque ullam veniam cum deleniti dignissimos suscipit exercitationem sequi mollitia laboriosam minus, itaque eaque sapiente, aperiam commodi ducimus! Explicabo ratione numquam necessitatibus adipisci veniam quia! Laboriosam placeat repellendus temporibus quibusdam quos quod assumenda. Suscipit, veritatis. Architecto, suscipit culpa. Distinctio magni a nemo ullam facere fugit. Nam ea maxime distinctio obcaecati tenetur. Delectus unde commodi fuga quod non possimus facilis sunt ratione, velit veritatis minus dolores facere nesciunt vel. Suscipit obcaecati quod voluptate. Necessitatibus labore incidunt corrupti molestias nisi repellat, quo ut amet ipsam perferendis non. Corrupti sapiente soluta, minima officiis corporis cupiditate mollitia blanditiis. Impedit quaerat dolore sed id velit quod sit provident obcaecati veniam eligendi, illo deserunt exercitationem nam incidunt libero maiores natus esse, laudantium nihil? Accusamus sed est sunt non omnis molestias quas beatae dolores esse, doloribus provident quisquam, fugit dolorem? Nemo excepturi deleniti corrupti quae exercitationem. Fugiat maxime animi quisquam nisi beatae repudiandae obcaecati modi perferendis corrupti reprehenderit atque saepe accusamus dignissimos possimus ipsa ratione rem vero, minima nemo. Iusto odio qui est. Impedit tempore, reiciendis illum vel ex placeat. Vel quo iusto quasi ipsam natus temporibus enim quisquam at reprehenderit, beatae numquam, accusantium, ratione sequi? Quod, ipsa nemo. Quod ut eius, quidem aliquid enim sit eos sed temporibus quos repudiandae qui debitis! Voluptatem voluptate veniam sed, omnis repudiandae aut unde labore eos. Alias asperiores fugiat eos laudantium, similique, officia quibusdam, tempore omnis ipsam consectetur voluptatibus molestiae ipsa inventore adipisci corporis quis voluptatem dignissimos numquam? Distinctio inventore dicta, quam delectus repellendus consectetur, dolorem corporis doloribus sit vero facere reiciendis labore nam doloremque quaerat voluptatem sed ut, rem dolor illo id? Saepe molestiae alias, voluptas tempora quisquam aspernatur qui delectus maiores culpa magnam laudantium suscipit. Mollitia voluptatum consectetur, id magni dolorem debitis harum natus cum nulla amet enim cumque. Odit dolorem quam unde quas consectetur, dignissimos sunt voluptatem dolore itaque, blanditiis iusto voluptatum? Eligendi a, dolor minima, eos porro maxime cupiditate aut ipsum nesciunt beatae dolores deleniti exercitationem facilis ipsa quo eum non quae quasi error suscipit et dignissimos molestiae fuga? Perspiciatis repudiandae labore ullam, mollitia fuga nostrum at quasi facere harum. Aspernatur odio reiciendis laborum dolorum aut eum neque commodi, qui repellendus maiores aliquid voluptatum quam! Amet fuga laboriosam nesciunt similique ducimus sunt totam tempora. Autem iste cupiditate quidem laudantium. Inventore est tenetur vitae delectus nobis perspiciatis architecto unde doloremque aut atque et distinctio sint optio beatae, in illo quis, fugiat, tempore nihil consequuntur? Delectus nulla eligendi illum facere, quisquam doloremque consequuntur corrupti odit labore, maiores quam quos cum omnis! Laudantium nihil illo veniam eum. Expedita maxime asperiores saepe ea eum numquam laboriosam accusantium nihil libero harum aperiam, quidem vitae fugit, inventore quae impedit. Obcaecati, ad laborum, aliquid sit tenetur architecto consequuntur beatae nostrum possimus vero magnam minus natus fugit ex! Hic, ullam quisquam sunt velit quae consectetur. Error vero natus officia veniam in dicta temporibus delectus veritatis blanditiis. Aliquam nam cumque accusantium fugit a voluptatibus exercitationem aut, sapiente inventore debitis dolore ducimus voluptate! Quis quidem architecto temporibus quo iste blanditiis distinctio impedit veniam, nihil eligendi vel quod aspernatur qui tempore, atque ducimus odit esse nulla. Ipsa quidem eligendi non alias libero totam laborum blanditiis voluptatem repellat fuga fugit suscipit quo dolorum, quae, molestias unde quod in praesentium. Inventore ea eos iste illum ipsa, architecto natus culpa animi repellendus magnam reprehenderit soluta mollitia voluptatum aliquam veniam optio illo voluptas distinctio alias, ducimus vero assumenda. Corrupti facere sapiente veritatis eligendi! Cumque vitae, voluptatem minus nihil reiciendis odit non natus, ipsum soluta, perferendis veritatis molestiae pariatur. Officiis nobis eaque magnam. Neque porro ab sequi doloribus nostrum, beatae deleniti facilis et quis eos natus. Tempore distinctio aliquid harum eius expedita inventore necessitatibus sunt qui voluptatem enim. Minus eum culpa porro. Praesentium minus earum vel quo commodi, quod fugit ipsum facere nisi eius numquam voluptates neque optio dolorem cum maiores doloremque nihil ab totam non officiis aut? Ratione voluptatem rerum pariatur reiciendis minus architecto numquam non enim ipsam ea, alias sapiente quaerat expedita iusto dolorum, similique sit aliquam possimus dicta. Error eligendi optio earum quas, culpa amet eos fuga perferendis ad totam qui. Nihil, iusto. Explicabo asperiores laudantium dolorum fugit labore ullam illo est mollitia modi repudiandae rem, consectetur quos. Expedita, deserunt quod! Sit blanditiis sapiente, qui unde quis animi fuga voluptatem earum pariatur praesentium dolor, dolores rem laudantium repudiandae modi, omnis quae maxime tempore consequatur aperiam. Voluptatum, quidem sunt libero incidunt esse expedita omnis fugit ea minus, facere sint quisquam accusantium beatae non cupiditate maiores optio aliquam. Eveniet, voluptates? Provident officiis aperiam aliquid accusantium temporibus, sit sapiente minima harum, eius odit ut veritatis iste aspernatur impedit tempore soluta, porro perferendis! Impedit enim, officiis quibusdam nihil alias quam distinctio unde quos commodi ex minima quisquam aspernatur corporis, molestiae, et mollitia harum nam sapiente aperiam velit dolor nostrum. Alias blanditiis maxime eius eveniet. Quo qui consectetur tenetur quis recusandae obcaecati non aliquam necessitatibus dolorem nesciunt quidem velit dolores in quod itaque commodi eaque odio iusto cum placeat hic, facere beatae iure? Ab dolores doloribus numquam, dolorum fugiat expedita veniam laudantium impedit, laboriosam, quo praesentium quibusdam dignissimos. Incidunt quidem consequuntur officiis modi animi, vero nihil fugiat expedita laborum sint similique minima eveniet. Ipsa dolor magni quibusdam voluptatem aspernatur quas totam deserunt!
+    </div>
+
+    <div>
+        <p class="raghav">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam cumque assumenda, nisi odit itaque perspiciatis sed doloremque officia sint ipsum esse id, suscipit necessitatibus quos ratione eos deserunt iure?
+        </p>
+    </div>
+
+    <div class="mycont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugit aut doloribus temporibus. Dicta nam architecto ex deserunt impedit aperiam amet aliquid fuga tempora! Possimus molestias iste consectetur ullam ipsum!</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 133px;
+            margin: 3px;
+            padding: 3px;
+        }
+
+
+        /* here these all boxes have the position static */
+        /* position is a property in css which is by default static in css */
+        /* static position means that the index like - top, bottom, left, right would not apply to them. meaning that we this position stops us from taking the benifit of these indexes */
+        .box1 {
+            background-color: orangered;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+        }
+
+        .box3 {
+            background-color: aqua;
+            position: relative;
+            /* here if i want that the box4 does not stack up on the box3 instead the box3 stack up on the box4 then i will set the z index. this is the index which should be more than 0 and if i want to set it then i should set the position apart from the static position like i did here which is relative positon in the box3 */
+            z-index: 1;
+        }
+
+        .box4 {
+            background-color: whitesmoke;
+            /* here if i apply position relative then i can take te benifit of index like - top, bottom, left, right */
+            position: relative;
+
+            /* here this function will give box4 a distnce of -13px from the top same will happen for the bottom also*/
+            top: -13px;
+
+            /* here this function will give the box4 a distance of 5px from the left same will happen for the right also */
+            left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+
+</html>

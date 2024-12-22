@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* here this root is the universal variable in which if i set a color, after that if i use that variable anywhere in the code. this will change the color, meaning that if you want to change the color of hundread elements then you will not need to do it manually. instead you can do it by changing the color of the variable */
+        /* you can also add many other things like border of the padding to the element by using the unliversal variable */
+        :root{
+            --color:blue;
+            --seccolor:orange;
+            --defpad:2px
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .red{
+            background-color: var(--color);
+        }
+        div ul{
+            display: flex;
+            list-style: none;
+        }
+
+        ul li:first-child{
+            /* over writing the universal variable */
+            /* here if i want to set the color of this element, which will only apply to this elenent not the others then i can set the local variable for this element */
+            --color:red;
+            background-color: var(--color);
+            /* here i have set the padding by this variable */
+            padding:var(--defpad);
+        }
+        .blue{
+            background-color:var(--seccolor)
+        }
+        .x{
+            margin: 23px
+        }
+    </style>
+</head>
+<body>
+        <div class="red">
+            <ul>
+                <li class="x">home</li>
+                <li class="x">about</li>
+                <li class="x">contact</li>
+            </ul>
+        </div>
+    <div class="blue">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolores voluptas id doloribus sed natus, iste minima aspernatur ex ipsum earum? Quis eaque necessitatibus aspernatur ducimus, sunt quos itaque expedita!
+        </p>
+    </div>
+</body>
+</html>

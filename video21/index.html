@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    [data-x=a]{
+        background-color: red;
+    }
+    
+
+    /* here this h1 element is given color by 4 different ways but it adopted the last one because in the first case the tag was completely different from other you will notice that red yellow and blue are the names of the classes but this element selector is an odd one from them and it selected blue because it came after every other class selector */
+    h1{
+        color: blueviolet;
+    }
+
+    .red{
+        color: black;
+    }
+
+    .yellow{
+        color: red;
+    }
+
+    .blue{
+        color: maroon;
+    }
+</style>
+</head>
+<body>
+    <h1 class="red yellow blue">hello</h1>
+
+    <!-- this is an example of attribute selector -->
+     <!-- here the data-x="a" specifies that wherewer the value of data-x="a" the color should be blue -->
+    <h2 data-x="a">namaskar</h2>
+    <!-- here this is an example of inline styling and wherever this is used the element would always have blue text -->
+    <h3 style="color: blue;">kaise ho</h3>
+</body>
+</html>

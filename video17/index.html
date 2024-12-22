@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* this is an element selector and it a drawback that it will apply color to every div element or the selected element, if i dont want to apply color to second div tag then it will still apply color to it*/
+    /* div{
+        background-color: black;
+        color: white;
+    } */
+     /* instead of element selector we use class selector */
+     /* class selector */
+     /* in a class selector we give the element a specific class and this code helps us give that element a specified color */
+     /* note that this code will give color to only those elements whose class are specified */
+     .red{
+        background-color: red;
+     }
+     /* id selector */
+     /* this is an id selector and this will give color to the element whose id is specified with a specific color */
+     #aqua{
+        background-color: aqua;
+     }
+     /* child selector */
+     /* child selector means that this will give paragraph tag color which is a child of div tag directly if i add an article tag and then specify the color to it then it would not work because it will be a child of article tag */
+     div > p{
+        color: white;
+        background-color: black;
+     }
+     /* decendent selector */
+     /* this is a decendent selector and it will apply color to the paragraph tag which is in the div tag either directly or indirectly which means if i use a div tag and add an article tag in it and then i use paragraph tag then also it will apply color to it*/
+     div p {
+        background-color: blue;
+        color: black;
+     }
+     /* universal selector */
+     /* this is a universal selector and it will apply to all the elements in this html page. here in the case of this page it will make margin 0 and padding also 0 which means that all the elements will have no gap between them */
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     /* psuedo selectors */
+     /* this  is the first  psuedo selector and this will convert the visited  link colours into the selected colors */
+     a:visited{
+        color: red;
+     }
+
+     /* this is the second psuedo selector and this  will convert  unvisited link colours into the selected colors */
+     a:link{
+        color:aqua
+     }
+     /* this is the third psuedo selector and this will convert the color of the link whichever i click into the selected color*/
+     a:active{
+        background-color: blue;
+     }
+     /* this is the fourth psuedo selector and this will convert the color of the link on which i will hover into the selected color */
+     a:hover{
+        background-color: black;
+     }
+     /* this is the fifth psuedo selector  and this will convert the color of every first child which is a paragraph tag into aqua*/
+     p:first-child{
+        background-color: aqua;
+     }
+</style>
+</head>
+<body>
+    <main class="one">
+        <p>i am the first child</p>
+        <p>i am the second child</p>
+    </main>
+    <div>
+        i am a div tag suuuuui
+    </div>
+    <div class="red">
+        i am a div tag suuuuui
+    </div>
+    <div id="aqua">
+        i am a div tag suuuuui
+    </div>
+    <!-- here paragraph is the child of the div tag -->
+    <div>
+        <p>
+            i am a paragraph suuuuuui
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>
+                i am a paragraph suuuuuui
+            </p>
+        </article>
+    </div>
+    <div>
+        <p>
+            i am a paragraph suuuuuui
+        </p>
+    </div>
+    <a href="https://www.youtube.com/@CodeWithHarry">go to CodeWithHarry</a>
+    <a href="https://www.youtube2.com/@CodeWithHarry">go to CodeWithHarry</a>
+    
+</body>
+</html>

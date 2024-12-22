@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* --color:blue; */
+            --seccolor:orange;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .red{
+            background-color: var(--color);
+        }
+        div ul{
+            display: flex;
+            list-style: none;
+        }
+
+        ul li:first-child{
+            /* --color:red; */
+
+            /* fallback variable */
+            /* here if the programme dosent finds the universal variable then i can set any color like this as a backup variable */
+            background-color: var(--color,blue);
+        }
+        .blue{
+            background-color:var(--seccolor)
+        }
+        .x{
+            margin: 23px
+        }
+    </style>
+</head>
+<body>
+        <div class="red">
+            <ul>
+                <li class="x">home</li>
+                <li class="x">about</li>
+                <li class="x">contact</li>
+            </ul>
+        </div>
+    <div class="blue">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolores voluptas id doloribus sed natus, iste minima aspernatur ex ipsum earum? Quis eaque necessitatibus aspernatur ducimus, sunt quos itaque expedita!
+        </p>
+    </div>
+</body>
+</html>

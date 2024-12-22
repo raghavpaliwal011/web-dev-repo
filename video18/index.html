@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <style>
+        /* this tag will give every single box's background aqua colour and this is the reason why we give one element 2 classes*/
+        .box{
+            background-color: aqua;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* this tag will individually give colour to the tag which is specially selected in case of box1, it will give colour to font */
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid blue;
+            /* here this box-sizing: border-box tag will apply height to the whole element (includin the border and padding only not the margin) but if we do not apply this tag then the height will apply to only content */
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* margin collaple */
+        /* this is a very imporant concept of css. if we apply margin to two elements in two lines one after another the margin will collapse meaning that css will take the biggest margin value and set it between them like if box 1 has 5 margin and box 2 has 10 margin then the margin or the distance between them will be 10 instead of 15*/
+    </style>
+</head>
+<body>
+    <!-- if we need to give on element two classes then we give it by giving space between them -->
+    <div class="box box1">i am a box</div>
+    <div class="box box2">i am another box</div>
+</body>
+</html>

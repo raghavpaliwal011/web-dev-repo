@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            border: 3px solid black;
+            margin: 34px;
+            padding: 43px;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 111px;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        .box1 {
+            background-color: aqua;
+            /* here this  position sticky means that this box1 will stick to the top of the page with 0px of distance. */
+            /* in short this position sticky means that the element will stick to the top, when you scroll other elements will dissapear but this will have a permanent position on the page. this is often used to design the navigation bars */
+            position: sticky;
+            top: 0;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box2 {
+            background-color: purple;
+        }
+
+        .box3 {
+            background-color: orangered;
+        }
+
+        .box4 {
+            background-color: greenyellow;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

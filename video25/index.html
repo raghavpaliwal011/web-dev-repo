@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLING LISTS IN CSS</title>
+    <style>
+        /* here this is the code to style the list present in the ul, which is present in the nav */
+        nav ul li{
+            list-style: devanagari;
+
+            /* here the background color will only apply to the list item not the marker of it */
+            background-color: blueviolet;
+            /* if i want the color on the maarker also then i will use this code and this code will also work on all the other functions. it means that the marker is now the part of the list item and the changes did on it will also apply on it*/
+            list-style-position: inside;
+
+            /* this will apply the border to the list item(including the marker)*/
+            border: 2px solid black;
+            
+
+
+            /* here this function will block the marker from the list item in the unordered list */
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>LISTS IN CSS</h1>
+    </div>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+</body>
+</html>

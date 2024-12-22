@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello {
+            border: 2px solid black;
+            padding: 34px;
+            /* here # is used for hex colors */
+            /* here to apply shadow, what you do is that you select a random code using # and then a random color appears. when it appears, a color pallet also appears and you can choose whichever color you want */
+            box-shadow: 2px 5px 3px #000000;
+        }
+
+
+        .namaskar{
+            margin: 55px auto;
+            /* this is use to apply shadow to a text the meathod is the same */
+            text-shadow: 3px 5px 4px #666;
+            /* here this outline  is not the part of the css box model and it comes directly after the border and you can increase or decrease it easily*/
+            outline: 2px solid black;
+            /* you can increase or decrease the distance in the outline by this */
+            outline-offset: 45px;
+            /* outline is given in extra like if you have added the border to the text and you still want an outline then you can use the outline */
+        }
+
+        .raghav{
+            margin: 55 px auto;
+            border: 2px solid black;
+            /* you can ever add the curves to the border by this meathod */
+            border-radius: 6px;
+            outline:  4px solid black;
+            /* here the outline will follow the border if the border is curve then the border will also be curve */
+            outline-offset: 4px;
+        }
+        /* Box Shadows
+box-shadow is a popular CSS property that enables designers to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover.
+
+
+this is the sintax for box shadow
+box-shadow: h-offset v-offset blur spread color inset;
+
+
+h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner */
+    </style>
+</head>
+
+<body>
+    <div class="hello">
+        hello
+    </div>
+
+    <div class="namaskar">hello</div>
+
+    <div class="raghav">hello</div>
+</body>
+
+</html>
