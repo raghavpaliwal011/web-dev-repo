@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA-QUERIES</title>
+    <style>
+        /* this code will convert the background color of the page into red */
+        body{
+            background-color: red;
+        }
+        /* the purpose of  the media queries in css is that if, any person in the world open the website in any device than the styles  should change */
+        /* for example: if i am opening the website in phone than and at the same time i am also opening it in the pc than the background color of the website in both devices may be different. this is possible through media queries */
+
+        /* the syntax for media queries is this: */
+        /* @media not|only mediatype and (expression) {css-code;}*/
+
+
+        /* this is one of the media queries */
+
+        /* this code means that if the max width of the device is less than 455px than these styles will apply to the body and if the max width of the device is more than 455px than the styles in this function will not apply to the body */
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+
+            /* here this means that when width will become less than 455 px, all the boxes will appear vertically */
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        /* we have many types of media queries and most popular among them are the following */
+        /* screen: used when the user is operating through screen like a laptop or the mobile */
+        /* all: used if the developer wants that the website should work properly on every device */
+
+        .boxes{
+            /* this display flex means that the boxes will appear horizontally on the website */
+            display: flex;
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+            height: 133px;
+            width: 145px;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is the explaination for css media queries
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
