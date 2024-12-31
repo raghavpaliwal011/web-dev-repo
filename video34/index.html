@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float-and-clear</title>
+    <style>
+        /* here this float left means that this will allow all other elements on its right  and it will settle itself on the left of the website */
+        img{
+            float: left;
+        }
+        
+        .cards{
+            border: 2px solid black;
+            /* here this image will be overflowing out of the box if i dont use this display property. this will settle the image in the box itself without letting it overflowing out of the box. */
+            display: flow-root;
+        }
+
+
+        .card:nth-child(1){
+            /* here this clear left means that this element will not allow the image on its left  */
+            /* if i do clear both then this means that this will not allow the image from both the sides and if i do clear right then this will not allow the image from the right */
+            clear: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://cdn.mos.cms.futurecdn.net/AoWXgnHSxAAPxqymPQMQYL-1200-80.jpg" alt="" height="230px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui quaerat ea minus odit suscipit neque tenetur, dolores sint est consequuntur reiciendis rerum veniam voluptatem alias laborum, omnis fugiat? Ut, eligendi magnam! Earum, inventore tempora. Reprehenderit provident temporibus ducimus sit veniam. Nihil tempore, voluptatibus ipsam eum dolorem fuga esse quisquam libero error modi quasi dolore voluptatem ut nam nemo praesentium? Neque, officia quos nihil iste reprehenderit earum alias ea adipisci quod, molestias minus non, eaque aliquam. Atque ad soluta ipsum voluptatum itaque accusamus asperiores neque sunt, odit voluptatem dicta distinctio laborum. Sit molestiae inventore incidunt, sed commodi beatae maiores. Illum totam cupiditate nihil aliquid, hic ipsam a ex expedita dicta impedit accusantium maxime ducimus libero at quis harum pariatur, vitae, et cum delectus quia iusto deleniti laudantium ea. Adipisci, animi id labore voluptate reprehenderit, exercitationem expedita quibusdam magnam magni, ipsam facilis iste at minima modi provident corporis hic nobis recusandae.</p>
+        <div class="card">card1</div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>
