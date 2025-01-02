@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        /* here this is a child selector and this means that wherever box is the first child of the boxes class, the color of it will change into red */
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+
+        /* this function will change the color of the first line of the box class only */
+        /* .box:first-line{
+            background-color: blue;
+        } */
+
+
+        /* this function will change the background color of each and every element in the boxes class */
+        /* .boxes *{
+            background-color: aqua;
+            border: 2px solid black;
+        } */
+
+
+        /* this is an attribute selector and this means that wherever the value of data-color is primary, add the margin of 45px from the top here i can also add padding and if i do it the space will add from inside the box*/
+        /* [data-color="primary"]{
+            margin-top: 45px;
+        } */
+
+
+        /* here this means that if the box is the even child of the boxes class then this will change the background color of the box here second box is the first and only even child that is why it has applied to it */
+        /* if i write odd then it will apply to the odd number */
+        /* .box:nth-child(even){
+            background-color: blueviolet;
+        } */
+
+
+
+        /* here this function means that this will count from the last meaning that if there are 5 boxes then it will count from fifth box and will select the second number of box for changing the background */
+        .box:nth-last-child(2){
+            background-color: blue;
+        }
+
+
+        /* psuedo elements */
+        /* this will insert the element before the selected element in this case it is the boxes class */
+        .boxes:before{
+            content: "this is raghav the god of gta5 suuui";
+        }
+
+        /* this will insert the element after the selected element in this case it is the boxes class */
+        .boxes:after{
+            content: "this is raghav the god of gta5 suuui";
+        }
+
+
+        /* this will change the color of the selected element as we want it */
+        ::selection{
+            background-color: black;
+            color: blue;
+        }
+
+
+        /* this function will change the color of the first letter of the text into red */
+        .box::first-letter{
+            color: red;
+        }
+
+
+        /* this will change the color of the placeholder of this input element */
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eligendi, quo rerum beatae vel perspiciatis voluptate dolores molestias nisi doloremque possimus commodi illum eius praesentium animi, similique ratione sunt ducimus ad adipisci molestiae enim pariatur unde! Rem architecto voluptates ea saepe eius magni, quos eaque enim impedit consectetur hic, numquam illum distinctio animi. Sed incidunt reprehenderit iure temporibus sunt distinctio architecto dignissimos ipsam rem! Assumenda recusandae ipsum nobis accusamus voluptate facilis incidunt praesentium aspernatur, minima quia cupiditate voluptates eaque blanditiis, cum eum nemo debitis suscipit alias ipsam aperiam, quidem modi nulla dolore natus. Iusto, ipsa error et atque praesentium sapiente non tenetur illo molestias suscipit aperiam sequi reiciendis nam quasi expedita corporis voluptatibus nulla totam, saepe veniam illum quaerat, voluptate tempora! Earum at unde similique assumenda delectus ducimus rerum perspiciatis eos! Eum magni quia totam non dolor eius cupiditate ad numquam ab minima, neque rem nesciunt ullam soluta fugiat consequatur iure molestiae sit expedita dolores distinctio. Laborum atque repudiandae corrupti, beatae tenetur necessitatibus blanditiis neque. Suscipit sed unde sint quae error deserunt nobis? Repellendus, possimus. Dignissimos quidem neque non veniam modi, maiores inventore cum ullam rem, laborum nam vero ipsa ab officiis. Culpa neque eum eaque natus temporibus asperiores nam voluptate aut quasi laboriosam fugiat rem architecto, repellat alias voluptatem incidunt illum quaerat dolorem facilis sed. Rem vero labore ipsa eum animi eligendi non voluptates id tenetur! Ipsa illo sequi magni repudiandae. Nulla eaque, nesciunt placeat consequatur repellat id dolorem magni ipsa reiciendis atque exercitationem tenetur omnis deleniti? Reiciendis sequi eos vitae temporibus officiis eius dolor dolores eum recusandae cupiditate facere repellendus est quisquam dolorum, quae, vel ut expedita ducimus molestias quo, doloremque labore quam architecto tempora! Nesciunt sapiente minus, illo blanditiis unde, quae reprehenderit quas libero fugit deserunt voluptas, est officia? Perspiciatis, eos eum dolore itaque unde quis earum voluptates, accusantium expedita nihil nesciunt tempore ut dolores facilis ducimus ea fugiat repellat error deserunt nisi aperiam enim exercitationem! Repellat soluta tempora provident optio nemo vel exercitationem, fugit blanditiis facilis in dicta nisi eaque culpa animi nobis odit ratione dolor praesentium dolore. Dolor nam dolore aut illo iste. Necessitatibus odio, iusto nisi ut nihil quo cum! Iste incidunt cupiditate veritatis, nisi iusto quisquam dignissimos nesciunt quae optio labore laboriosam sequi porro dicta pariatur neque minima aliquid suscipit quas aut non quibusdam libero minus quod assumenda. Ea quisquam quae minima quis eos aliquid neque fugiat quasi praesentium, impedit soluta libero. Explicabo, ratione! Error exercitationem, voluptate in voluptatem animi earum. Earum est quas odit corrupti quibusdam sit temporibus, accusamus consequatur autem unde fugiat voluptatem magnam! Ipsum reprehenderit voluptate maxime repellendus id! Incidunt odio dicta unde corporis officia pariatur ab! Voluptate, nam. Mollitia adipisci, officiis ratione distinctio molestiae quasi reprehenderit quae architecto. Nobis quis eligendi animi totam vel, consequatur perspiciatis.</div>
+        <div class="box" data-color="primary" >hello i am a box</div>
+        <div class="box">hello i am a box</div>
+        <input type="text" placeholder="enter your name here">
+    </div>
+</body>
+</html>
