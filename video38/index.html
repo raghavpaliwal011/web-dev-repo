@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox properties</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: flex;
+        background-color: burlywood;
+        /* this will allign the boxes hoizontally in center */
+        justify-content: center;
+        
+        /* this will allign the boxes vertically in center */
+        /* i can also give this the value of flex-end, flex-start,end, normal, left or right etc */
+        align-items: center;
+        height: 80vh;
+
+        /* here if i add flex-derection:column, then the direction of the boxes will change from top to bottom meaning that now they will display vertically */
+        flex-direction: column;
+
+
+        /* if i add this flex-direction:column-reverse, then the countin of the boxes will start from bottom to top meaning the first box will appear at the bottom */
+        /* flex-direction: column-reverse; */
+    }
+    .item{
+        border: 2px solid black;
+        margin: 23px;
+        height: 92px;
+        width: 92px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
