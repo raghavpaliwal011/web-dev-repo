@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+
+            /* this will display the grid on this div */
+            display: grid;
+
+            /* this will divide the boxes into separate columns each of 100px */
+            grid-template-columns:100px 100px;
+
+            /* this will specify the height of the rows between each of the box */
+            grid-template-rows: 100px 100px 100px;
+        }
+        .item{
+            border: 2px solid black;
+            height: 90px;
+            width: 90px;
+        }
+
+        .item-4{
+            /* this will specify the grid row of the box meaning that it will start from row1 and end at row2 */
+            grid-row:1/2;
+            /* this will specify the grid column of the box meaning that it will start from the column1 and end at column2 */
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
